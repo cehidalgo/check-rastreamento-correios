@@ -4,17 +4,14 @@
    "description": "An terminal utility to check the package status at the brazilian public package service, Correios.",
    "main": "runtime.js",
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node runtime.js",
+      "dev": "nodemon runtime.js"
    },
    "repository": {
       "type": "git",
       "url": "git+https://github.com/cehidalgo/check-rastreamento-correios.git"
    },
-   "keywords": [
-      "correios",
-      "encomenda",
-      "rastreamento"
-   ],
+   "keywords": ["correios", "encomenda", "rastreamento"],
    "author": "Carlos E. Hidalgo",
    "license": "MIT",
    "bugs": {
@@ -23,5 +20,8 @@
    "homepage": "https://github.com/cehidalgo/check-rastreamento-correios#readme",
    "dependencies": {
       "puppeteer": "^4.0.1"
+   },
+   "devDependencies": {
+      "nodemon": "^2.0.4"
    }
 }
