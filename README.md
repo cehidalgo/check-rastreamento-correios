@@ -12,3 +12,4 @@ Just run `node runtime <valid-correios-id>` or `npm start <valid-correios-id>`.
 -  Use typescript.
 -  Give a better validation treatment to this correios id passed to the utility.
 -  Get improvements on the scrapping technique I just used.
+-  Get the runtime in a proper executable (which I don't know how to do right now).

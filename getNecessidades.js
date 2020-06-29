@@ -43,8 +43,8 @@ async function getAtualizacao() {
         resposta[i] = {
           status: correString[0].split(': ')[1],
           data: correString[1].split(': ')[1].split('|')[0].trim() + ' ' + correString[1].split(': ')[2],
-          origem: correString[2].split(': ')[1],
           destino: correString[3].split(': ')[1],
+          origem: correString[2].split(': ')[1],
         };
       }
     }
