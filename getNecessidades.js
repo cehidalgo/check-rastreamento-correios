@@ -13,8 +13,8 @@ async function getNecessidades() {
 }
 
 async function visitarLinkCorreios(argumento) {
-  await page.goto(`https://www.linkcorreios.com.br/?id2=${argumento}`);
-  await page.waitForSelector('[class="linha_status"]');
+  await page.goto(`https://www.linkcorreios.com.br/?id2=${argumento}`, { timeout: 10000 });
+  await page.waitForSelector('[class="linha_status"]', { timeout: 200 });
 }
 
 async function fecharBrowser() {
@@ -28,11 +28,8 @@ async function getAtualizacao() {
 
     for (let i = 0; i < teste.length; i++) {
       let correString = teste[i].innerText.trim().split('\n') || [];
-      console.log(correString, '-> teste');
 
-      if (typeof correString[0] === 'undefined') continue;
-      if (typeof correString[1] === 'undefined') continue;
-      if (typeof correString[2] === 'undefined') continue;
+      if (correString.length <= 1) continue;
       if (typeof correString[3] === 'undefined') {
         resposta[i] = {
           status: correString[0].split(': ')[1],
