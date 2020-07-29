@@ -1,6 +1,6 @@
 {
    "name": "check-rastreamento-correios",
-   "version": "0.0.0",
+   "version": "1.0.0",
    "description": "An terminal utility to check the package status at the brazilian public package service, Correios.",
    "main": "runtime.js",
    "scripts": {
@@ -14,7 +14,11 @@
       "type": "git",
       "url": "git+https://github.com/cehidalgo/check-rastreamento-correios.git"
    },
-   "keywords": ["correios", "encomenda", "rastreamento"],
+   "keywords": [
+      "correios",
+      "encomenda",
+      "rastreamento"
+   ],
    "author": "Carlos E. Hidalgo",
    "license": "MIT",
    "bugs": {
