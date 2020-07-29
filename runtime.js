@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { getNecessidades, fecharBrowser, getAtualizacao, visitarLinkCorreios } = require('./getNecessidades');
 
 (async () => {
@@ -10,11 +11,11 @@ const { getNecessidades, fecharBrowser, getAtualizacao, visitarLinkCorreios } = 
 
     atualizacao = await getAtualizacao();
   } catch (error) {
+    fecharBrowser(necessidades[0]);
     console.log('***********************************');
     console.log('ERRO RESPOSTA:');
     console.log(error);
     console.log('***********************************');
-    fecharBrowser(necessidades[0]);
     return;
   }
 

@@ -13,7 +13,7 @@ async function getNecessidades() {
 }
 
 async function visitarLinkCorreios(argumento) {
-  await page.goto(`https://www.linkcorreios.com.br/?id2=${argumento}`, { timeout: 10000 });
+  await page.goto(`https://www.linkcorreios.com.br/?id2=${argumento}`, { timeout: 60000 });
   await page.waitForSelector('[class="linha_status"]', { timeout: 200 });
 }
 

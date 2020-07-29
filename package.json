@@ -7,6 +7,9 @@
       "start": "node runtime.js",
       "dev": "nodemon runtime.js"
    },
+   "bin": {
+      "check-rastreamento-correios": "./runtime.js"
+   },
    "repository": {
       "type": "git",
       "url": "git+https://github.com/cehidalgo/check-rastreamento-correios.git"
